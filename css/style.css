@@ -1,3 +1,94 @@
-body{
-    background-color: #abc;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@font-face{
+    font-family: "Cal Sans";
+    src: 
+    url("../fonts/CalSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/CalSans-SemiBold.woff") format("woff");
 }
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    overflow: auto;
+}
+
+.wrapper{
+    max-width: 1210px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 auto;
+}
+
+/*------header------*/
+header{
+    position: absolute;
+    width: 100%;
+}
+.header__wrapper {
+    display: flex;
+    padding-top: 62px;
+    padding-bottom: 62px;
+    align-items: center;
+}
+.header__logo {
+    margin-right: 121px;
+    padding-right: 5px;
+    height: 29px;
+}
+.header__nav {
+    display: flex;
+    gap: 56px;
+}
+.nav {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.nav-item {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(18, 18, 18, 0.4);
+    text-decoration: underline;
+}
+
+/*------header end------*/
+/*------header-content------*/
+
+.header-content {
+    overflow: auto;
+
+}
+.header-content__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.header-content__row {
+    align-self: flex-end;
+}
+.header-content__title {
+}
+.header-content__text {
+}
+.header-content__buttons {
+}
+.buttons {
+}
+.buttons__submit {
+}
+.buttons__logo {
+}
+.header-content__img {
+    margin-right: -120px;
+}
+
+/*------header-content end------*/
