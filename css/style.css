@@ -140,6 +140,19 @@ header{
 }
 
 /*------header-content end------*/
+
+.title{
+    font-family: Cal Sans;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 53px;
+    color: #121212;
+    margin: 80px auto;
+}
+.title span{
+    color: #FF6428;
+}
+
 /*------store------*/
 
 .store {
@@ -148,15 +161,17 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 90px;
 }
 .store__title {
-}
-.title {
 }
 .store__category {
     width: 100%;
 }
 .category {
+}
+.category:not(:last-child) {
+    margin-bottom: 96px;
 }
 .category__head-row {
     display: flex;
@@ -164,8 +179,23 @@ header{
     justify-content: space-between;
 }
 .category__title {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    color: #121212;
+    text-decoration: underline;
 }
 .category__view-all {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: #868686;
+    text-decoration: underline;
 }
 .category__item-row {
     display: flex;
@@ -173,13 +203,155 @@ header{
 }
 .category__item {
 }
-.item-category {
+.item-category:hover {
+    cursor: pointer;
 }
 .item-category__image {
+    margin-bottom: 71px;
 }
 .item-category__title {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #121212;
+    margin-bottom: 7px;
 }
 .item-category__price {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #666666;
 }
 
 /*------store end------*/
+/*------categories------*/
+
+.categories {
+}
+.categories__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+.categories__title {
+}
+.categories__items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.categories__card {
+    width: 18.33%;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration-line: underline;
+    padding-top: 220px;
+    padding-bottom: 30px;
+    color: #fff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.categories__card:nth-child(1){
+    background-image: url(../img/categories/categories-image1.jpg);
+}
+.categories__card:nth-child(2){
+    background-image: url(../img/categories/categories-image2.jpg);
+}
+.categories__card:nth-child(3){
+    background-image: url(../img/categories/categories-image3.jpg);
+}
+.categories__card:nth-child(4){
+    background-image: url(../img/categories/categories-image4.jpg);
+}
+
+/*------categories end------*/
+/*------brands------*/
+
+.brands {
+}
+.brands__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 89px;
+    padding-right: 89px;
+    margin-bottom: 180px;
+}
+.brands__title {
+}
+.brands__items {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 80px 160px;
+    align-items: center;
+    justify-content: center;
+}
+.brands__logo {
+    width: 11.89%;
+}
+
+/*------brands end------*/
+/*------about------*/
+.about{
+    background-color: #121212;
+}
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 94px;
+}
+
+.about__title {
+    color: #fff;
+}
+
+.about__items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.about__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-about {
+    width: 19.16%;
+}
+.card-about__logo{
+    margin-bottom: 40px;
+}
+.card-about__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.08em;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 12px;
+}
+.card-about__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    text-align: center;
+    color: #666666;
+}
+
+/*------about end------*/
